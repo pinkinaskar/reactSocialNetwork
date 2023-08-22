@@ -13,7 +13,7 @@ function Postcontent() {
 		getContentList().then((res) => {
 
 			//console.log('res : ',res.status);
-			//console.log('content : ',res.data.data);
+			console.log('content : ',res.data.data);
 
 			if (res.status === 200) 
 			{		
@@ -25,20 +25,20 @@ function Postcontent() {
 	  }, []);
 
     return (  
-							<div class="col-lg-6">
-								<ul class="filtr-tabs">
-									<li><a class="active" href="https://wpkixx.com/html/socimo/#" title="">Home</a></li>
+							<div className="col-lg-6">
+								<ul className="filtr-tabs">
+									<li><a className="active" href="https://wpkixx.com/html/socimo/#" title="">Home</a></li>
 									<li><a href="https://wpkixx.com/html/socimo/#" title="">Recent</a></li>
 									<li><a href="https://wpkixx.com/html/socimo/#" title="">Favourit</a></li>
 								</ul>
-								<div class="main-wraper">
-									<span class="new-title">Create New Post</span>
-									<div class="new-post">
+								<div className="main-wraper">
+									<span className="new-title">Create New Post</span>
+									<div className="new-post">
 										<form method="post">
-											<i class="icofont-pen-alt-1"></i>
+											<i className="icofont-pen-alt-1"></i>
 											<input type="text" placeholder="Create New Post"/>
 										</form>
-										<ul class="upload-media">
+										<ul className="upload-media">
 											<li>
 												<a href="https://wpkixx.com/html/socimo/#" title="">
 													<i><img src="images/image.png" alt=""/></i>
@@ -63,20 +63,20 @@ function Postcontent() {
 
 								{/* recent stories */}
 
-								{/* <div class="story-card">
+								{/* <div className="story-card">
 									
 								</div> */}
 
 
 								{/* chat room */}
 
-								{/* <div class="main-wraper">
+								{/* <div className="main-wraper">
 									</div> */}
 
 
 								{/* suggested */}
 
-								{/* <div class="main-wraper">
+								{/* <div className="main-wraper">
 									
 								</div> */}
 
@@ -85,7 +85,7 @@ function Postcontent() {
 						{/* user's post start */}
 
 						{content.map(item => (	
-							<Listcontent/>	
+							<Listcontent content={item} />	
 						))}
 							
 						{/* user's post end */}
@@ -95,8 +95,8 @@ function Postcontent() {
 							
 								{/* loadmore */}
 
-								{/* <div class="loadmore">
-									<div class="sp sp-bars"></div>
+								{/* <div className="loadmore">
+									<div className="sp sp-bars"></div>
 									<a href="https://wpkixx.com/html/socimo/#" title="" data-ripple="">Load More..</a>
 								</div> */}
 							</div>

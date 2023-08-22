@@ -9,11 +9,11 @@ function Sections() {
 
     return (  
 <section>
-		<div class="gap">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div id="page-contents" class="row merged20">
+		<div className="gap">
+			<div className="container">
+				<div className="row">
+					<div className="col-lg-12">
+						<div id="page-contents" className="row merged20">
 
 							{/* clock section */}
 
